@@ -14,25 +14,6 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
-
-/**
- * @fileoverview An example test that may be run using Mocha.
- *
- * This example uses the `selenium-webdriver/testing.suite` function, which will
- * automatically run tests against every available WebDriver browser on the
- * current system. Alternatively, you may use the `SELENIUM_BROWSER`
- * environment variable to narrow the scope at runtime.
- *
- * Usage:
- *
- *     # Automatically determine which browsers to run against.
- *     mocha -t 10000 selenium-webdriver/example/google_search_test.js
- *
- *     # Configure tests to only run against Google Chrome.
- *     SELENIUM_BROWSER=chrome \
- *         mocha -t 10000 selenium-webdriver/example/google_search_test.js
- */
-
 const assert = require('assert');
 const mocha = require('mocha');
 const {Browser, By, Key, until} = require('selenium-webdriver');
