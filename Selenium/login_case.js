@@ -56,19 +56,6 @@ suite(function(env) {
       await driver.wait(until.titleIs('My Store'), 2000);
     });
 
-    // The ignore function returns wrappers around describe & it that will
-    // suppress tests if the provided predicate returns true. You may provide
-    // any synchronous predicate. The env.browsers(...) function generates a
-    // predicate that will suppress tests if the  env targets one of the
-    // specified browsers.
-    //
-    // This example is always configured to skip Chrome.
-    ignore(env.browsers(Browser.CHROME)).it('demo 2', async function() {
-      await driver.get('http://www.google.com/ncr');
-      let url = await driver.getCurrentUrl();
-      assert.equal(url, 'http://localhost/litecart/admin/');
-    });
-
     after(() => driver && driver.quit());
     });
 });

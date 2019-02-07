@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4cb3402-7488-4d78-b070-e3923e15e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/login_case.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mocha/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mocha/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_case.js" beforeDir="false" afterPath="$PROJECT_DIR$/login_case.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +33,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="142" />
-          <entry key="JavaScript" value="570" />
+          <entry key="JavaScript" value="571" />
         </counts>
       </usages-collector>
     </session>
@@ -74,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login_case.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="55" column="57" lean-forward="true" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+            <state relative-caret-position="369">
+              <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -111,7 +107,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -211,14 +207,11 @@
       <workItem from="1549393770259" duration="3596000" />
       <workItem from="1549456500333" duration="2383000" />
       <workItem from="1549485466591" duration="300000" />
-      <workItem from="1549551153266" duration="3618000" />
+      <workItem from="1549551153266" duration="4088000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test - 2019.02.07 at 19h 06m 37s.xml">
-      <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Run_test - 2019.02.07 at 19h 08m 16s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -246,12 +239,15 @@
     <history-entry file="Run_test - 2019.02.07 at 19h 27m 42s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Run_test - 2019.02.07 at 19h 46m 46s.xml">
+      <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9897000" />
+    <option name="totallyTimeSpent" value="10367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19283456" />
@@ -307,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login_case.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="55" column="57" lean-forward="true" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state relative-caret-position="369">
+          <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
         </state>
       </provider>
     </entry>
