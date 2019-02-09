@@ -3,18 +3,9 @@ const { expect } = require('chai');
 const {done} = require('mocha');
 
 describe('DefaultTest', () => {
-    let driver = require('selenium-webdriver');
+    const driver = new Builder().forBrowser('firefox').build();
 
-    let chromeCapabilities = driver.Capabilities.chrome();
-//setting chrome options to start the browser fully maximized
-    let chromeOptions = {
-        'args': ['--test-type', '--start-maximized']
-    };
-    chromeCapabilities.set('chromeOptions', chromeOptions);
-    driver = new driver.Builder().withCapabilities(chromeCapabilities).build();
-
-
-    it('login_case_chrome', async () => {
+    it('login_case_firefox', async () => {
         await driver.get('http://localhost/litecart/admin/');
         await driver.findElement(By.name('username')).sendKeys('admin', Key.RETURN);
         await driver.findElement(By.name('password')).sendKeys('admin', Key.RETURN);
