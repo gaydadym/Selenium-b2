@@ -16,13 +16,13 @@ describe('DefaultTest', () => {
         await browser.wait(until.titleIs('Online Store | My Store'), 2000);
     });
     it('Task#8. Stickers checking', async()=> {
-        let elements = await browser.findElements(By.css("li.product.column.shadow.hover-light"));
+        let elements = await browser.findElements(By.css("div.image-wrapper"));
         let i = 0;
         let l = elements.length;
         let subElements;
         while (i<l){
             console.log(i+1+' товар');
-            elements = await browser.findElements(By.css("li.product.column.shadow.hover-light"));
+            elements = await browser.findElements(By.css("div.image-wrapper"));
             subElements = await elements[i].findElements(By.css('div[class^=sticker]'));
             if (subElements.length===1) await console.log('ОК. У товара один стикер');
             else if (subElements.length===0) await console.log('TEST FAILED. У товара нет стикеров!!! ');
