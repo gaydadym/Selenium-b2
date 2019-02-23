@@ -84,17 +84,19 @@ describe('DefaultTest', () => {
             await rows[links[i]].findElement(By.tagName('a')).click();
             await console.log('Кликнул по ссылке');
             await browser.wait(until.titleIs('Edit Country | My Store'), 2000);
-            cells = await browser.findElements(By.tagName('td'));
-            await console.log('Нашел ячейки');
+            cells = await browser.findElements(By.tagName('table#table-zones>tbody>tr>td'));
+            console.log('Нашел ' +await cells.length+' ячеек');
             for (j;j<cells.length;j++) {
                 await console.log('Вошел во вложенный цикл.');
-                if (await cells[j].getAttribute('cellIndex')==='2') {
+
+                if (await cells[j].getAttribute('cellIndex')==='2'&& await cells[j].getAttribute('textContent')!=='') {
                     await console.log('Нашел ячеку со страной');
-                    await console.log('Содержимое ячейки '+ cells[j].getAttribute('textContent'));
-                    await countries.push(cells[j].getAttribute('textContent'));
-                    break;
+                    console.log('Содержимое ячейки '+ await cells[j].getAttribute('textContent'));
+                    countries.push(await cells[j].getAttribute('textContent'));
                 }
             }
+            if (countries===countries.sort()) await console.log('сортировка в таблице правильная');
+            else await console.log('сортировка в таблице правильная')
         }
         await console.log('Массив со странами' + countries);
     });
