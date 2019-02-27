@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4cb3402-7488-4d78-b070-e3923e15e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Task#12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task#13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,31 +19,32 @@
     <session id="525220184">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="6" />
-          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.17" value="4" />
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ECMAScript 6" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="14" />
+          <entry key="JavaScript" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="142" />
-          <entry key="JavaScript" value="14500" />
+          <entry key="JavaScript" value="18006" />
           <entry key="PLAIN_TEXT" value="61" />
         </counts>
       </usages-collector>
@@ -50,11 +52,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task#12.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="73" column="62" lean-forward="true" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
+            <state relative-caret-position="850">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task#13.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -62,8 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task#11.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="767">
+            <state relative-caret-position="1258">
               <caret line="74" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_case_firefox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -75,6 +95,7 @@
       <find>suit</find>
       <find>length</find>
       <find>contin</find>
+      <find>bu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,6 +115,7 @@
         <option value="$PROJECT_DIR$/Task#9.js" />
         <option value="$PROJECT_DIR$/Task#11.js" />
         <option value="$PROJECT_DIR$/Task#12.js" />
+        <option value="$PROJECT_DIR$/Task#13.js" />
       </list>
     </option>
   </component>
@@ -142,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,12 +175,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Task#11.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Task#13.js" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -208,7 +230,7 @@
       <ui>bdd</ui>
       <extra-mocha-options>-t 70000</extra-mocha-options>
       <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/Task#12.js</test-file>
+      <test-file>$PROJECT_DIR$/Task#13.js</test-file>
       <method v="2" />
     </configuration>
     <list>
@@ -255,6 +277,10 @@
       <workItem from="1550740374413" duration="5956000" />
       <workItem from="1550916087128" duration="10157000" />
       <workItem from="1550992816703" duration="11231000" />
+      <workItem from="1551114455703" duration="7033000" />
+      <workItem from="1551155083438" duration="136000" />
+      <workItem from="1551188024634" duration="8625000" />
+      <workItem from="1551272416907" duration="4814000" />
     </task>
     <task id="LOCAL-00001" summary="commit with login_case_firefox and ChromeCapabilities">
       <created>1549738216930</created>
@@ -267,51 +293,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test - 2019.02.24 at 13h 13m 49s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 16h 48m 15s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 15m 06s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 08m 15s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 18m 39s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 09m 51s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 21m 37s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 11m 18s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 22m 20s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 14m 50s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 46m 20s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 15m 36s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 46m 59s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 16m 04s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 47m 35s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 19m 03s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 49m 18s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 19m 30s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Run_test - 2019.02.24 at 13h 49m 45s.xml">
+    <history-entry file="Run_test - 2019.02.27 at 17h 20m 36s.xml">
       <configuration name="Run test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154975000" />
+    <option name="totallyTimeSpent" value="175583000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14436248" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21759747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920508" visible="true" weight="0.44793928" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920508" visible="true" weight="0.4002169" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,24 +433,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_case_firefox.js">
+    <entry file="file://$PROJECT_DIR$/Task#12.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="850">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task#11.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
+        <state relative-caret-position="1258">
           <caret line="74" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task#12.js">
+    <entry file="file://$PROJECT_DIR$/login_case_firefox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="73" column="62" lean-forward="true" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
+        <state relative-caret-position="85">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task#13.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
         </state>
       </provider>
     </entry>
