@@ -43,21 +43,26 @@ describe('Task#13', () => {
             }
             linkText = await cart.getAttribute('innerText');
             await browser.findElement(By.css('button[name=add_cart_product]')).click();
+            linkText = await cart.getAttribute('innerText');
 
-            for (let i = 0;i<20;i++){
-                if (linkText=== await cart.getAttribute('innerText')){
-                    await browser.sleep(200);
-                }
-                else break;
-            }//await browser.navigate().refresh().then(function () {
+            //for (let i = 0;i<20;i++){
+              //  if (linkText=== await cart.getAttribute('innerText')){
+                //    await browser.sleep(200);
+                //}
+                //else break;
+            //}await browser.navigate().refresh().then(function () {
               //  browser.wait(until.stalenessOf(cart), 10000/*ms*/);
             //});
             await console.log('Кликнул по ссылке'+'\n');
-
+            await browser.wait(function() {
+                return cart.getAttribute('innerText').then(function(elementText) {
+                    return elementText !== linkText;
+                });
+            }, 2000);
 
         }
         await browser.findElement(By.css('div#cart')).click();
-        await browser.sleep(2000);
+
     });
 
 
@@ -67,22 +72,23 @@ describe('Task#13', () => {
         let removeButtons;
         let cells = await browser.findElements(By.css('table[class^=dataTable] td'));
         let cellsCount;
+
         for (let i = 0;i<buttonsCount;i++){
-            shortcuts = await browser.findElements(By.css('button[name=remove_cart_item]'));
-            await shortcuts[0].click();
-            await console.log('\n'+'Кликнул по иконке товара');
-            cells = await browser.findElements(By.css('table[class^=dataTable] td'));
+            await console.log('Удаляю элемент '+(i+1));
             await console.log('Нашел ячейки таблицы');
-            cellsCount = cells.length;
+            cellsCount = await cells.length;
             removeButtons = await browser.findElements(By.css('button[name=remove_cart_item]'));
-            await console.log('Нашел кнопки удаления');
-            await browser.wait(until.elementIsEnabled((removeButtons[0]),5000));
+            await console.log('Нашел кнопку удаления');
+            await browser.wait(until.elementIsEnabled((removeButtons[0]),4000));
             await removeButtons[0].click();
             await console.log('Кликнул по кнопке удаления');
-            for (let j=0;j<20;j++){
-                if (cells.length!==cellsCount) break;
-                else await browser.sleep(200);
-            }
+
+            await browser.wait(function() {
+                return browser.findElements(By.css('table[class^=dataTable] td')).then(function(tableRefreshWaiting) {
+                    return tableRefreshWaiting.length !== cellsCount;
+                });
+            }, 2000);
+
         }
     });
 
