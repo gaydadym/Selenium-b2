@@ -3,6 +3,8 @@ const {By, Key, until } = require('selenium-webdriver');
 describe('Task#14', () => {
     let driver = require('selenium-webdriver');
     let newWindow;
+    let existingWindows;
+    let allWindows;
     let chromeCapabilities = driver.Capabilities.chrome();
 //setting chrome options to start the browser fully maximized
     let chromeOptions = {
@@ -27,40 +29,31 @@ describe('Task#14', () => {
 
     it('Cheking opening pages in new blanks', async () => {
         let originalWindow = await browser.getWindowHandle();
-        let existingWindows = await browser.getAllWindowHandles();
-        let allWindows;
-
-
+        existingWindows = await browser.getAllWindowHandles();
         let links = await browser.findElements(By.css('i[class*=external-link]'));
         let linksCount = links.length;
         for (let i=0;i<linksCount;i++){
             links = await browser.findElements(By.css('i[class*=external-link]'));
-            originalWindow = await browser.getWindowHandle();
             existingWindows = await browser.getAllWindowHandles();
             await links[i].click();
-            allWindows = await browser.getAllWindowHandles();
-
-            await console.log('Содержимое переменной allWindows '+ '\n'+allWindows);
-            await browser.wait(function ThereIsWindowOtherThan () {
-                for (let j = 0; j < allWindows.length; j++) {
-                    if (allWindows[j] in existingWindows) continue;
+            newWindow = await browser.wait(async function ThereIsWindowOtherThan () {
+                allWindows = await browser.getAllWindowHandles();
+                let j = 0;
+                while (true) {
+                    if (existingWindows.includes(allWindows[j])) j++;
                     else {
-                        newWindow = allWindows[j];
                         console.log('Возвращаю адрес нового окна '+allWindows[j]);
                         return allWindows[j];
 
                     }
                 }
-
             }, 10000);
-            await console.log('Новое окно '+newWindow);
             await browser.switchTo().window(newWindow);
             await console.log('Переключился в '+(i+1)+' новое окно');
+            await browser.close(newWindow);
             await browser.switchTo().window(originalWindow);
-            await console.log('Вернулся в первоначальное');
-
+            await console.log('Вернулся в первоначальное окно');
         }
-
     });
 
     after(async () => browser.quit());
